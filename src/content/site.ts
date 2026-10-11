@@ -34,8 +34,14 @@ export const hero = {
     "SolarShop plans, supplies and installs solar panel and battery systems sized to your roof, your energy use and your budget. One team looks after you from the first survey to switch-on and beyond.",
   primaryCta: { label: "Book a free assessment", href: "#enquire" },
   secondaryCta: { label: "Browse the range", href: "#shop" },
-  points: ["Free roof assessment", "Design, supply and install", "Aftercare and monitoring"],
-  // SAMPLE system shown on the hero illustration
+  // The promise strip along the bottom of the hero
+  points: [
+    { icon: "survey", title: "Free roof assessment", text: "On-site survey and a clear, no-obligation quote." },
+    { icon: "install", title: "Design, supply and install", text: "One team from first drawing to switch-on." },
+    { icon: "monitor", title: "Aftercare and monitoring", text: "We watch over your system long after install." },
+    { icon: "sizes", title: "Homes, farms and business", text: "Rooftop, ground-mount and battery systems." },
+  ],
+  // SAMPLE system shown on the hero card
   example: { panels: 16, size: "6.4 kWp", battery: "10 kWh", pitch: "32°", facing: "South" },
 };
 

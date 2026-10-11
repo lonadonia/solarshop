@@ -15,7 +15,7 @@ For homeowners, farmers and business owners weighing a solar investment, the sit
 ## 3. Signature devices
 
 - **The "o" mark in the headline**: "Grow your own p●wer." The logo's sun-over-hills disc replaces the o.
-- **Hero disc**: a large circular daylight landscape (home with roof panels, battery, ground array) framed like the logo mark, with a dotted sun path.
+- **Hero panorama**: the logo mark opened out to the full width of the page. The sun rises behind rolling hills; a farm sits on the far ridge, a solar home with battery and EV charger on the middle hill, a ground array on the slope. The headline sits over open sky, an example-system card floats on the right, and a promise strip stands on the ground.
 - **Arch frames**: product and scene images sit in arch-topped windows, the sun rising over a horizon.
 - **Horizon edges**: the logo's curved band reappears as section edges and as the footer, where the sun rises behind three hills.
 - **Process sun path**: the four steps sit under a sun that climbs from morning to midday.
@@ -58,7 +58,7 @@ All text pairs were checked against WCAG AA (see 04).
 | # | Section | Field | Content and interaction | REQ |
 |---|---|---|---|---|
 | 1 | Header | daylight, sticky | Logo, six anchors, phone, yellow CTA; mobile drawer with Escape and focus return | 001, 010 |
-| 2 | Hero | daylight | Eyebrow, headline with logo "o", lead, two CTAs, three promises; hero disc with example-system chips; sun rises on load | 001, 002, 005, 009 |
+| 2 | Hero | sky → leaf ground | Eyebrow badge, headline with logo "o", lead, two CTAs; example-system card (size, illustrative daily output curve, battery, export); full-width panorama; four-part promise strip; sun rises on load | 001, 002, 005, 009 |
 | 3 | What we do | daylight + 4 tiles | Bento: solar (butter, tall), battery (sage), EV (mist), care (forest, with monitoring card) | 002, 004, 009 |
 | 4 | Who it's for | mist, horizon edge | Tabs Homes / Business / Farms & land; arch scene, benefits, typical sizes, CTA that preselects property type | 002, 009 |
 | 5 | Shop | forest | Filter chips, six example listings, spec chips, "Ask about this" prefills the form | 004, 009, 016 |
@@ -70,14 +70,14 @@ All text pairs were checked against WCAG AA (see 04).
 
 ## 7. Responsive behaviour
 
-- 1440: two-column hero, 3-column bento and shop, horizontal process with sun path.
+- 1440: hero text left and example-system card right over a full-width panorama, 3-column bento and shop, horizontal process with sun path.
 - 1024: same structure; monitoring card stacks inside its tile.
-- 768: hero stacks, illustration below text; bento 2 columns; shop 2 columns; process becomes a vertical timeline.
+- 768: hero stacks (card lays out in two columns), panorama below, promise strip 2 × 2; bento 2 columns; shop 2 columns; process becomes a vertical timeline.
 - 390 / 360: single column, menu drawer, chips kept inside gutters, form fields full width.
 
 ## 8. Motion
 
-One orchestrated moment: the hero sun rises (1.8s) and its halo breathes slowly; chips settle in from 10px below (never from invisible). Buttons lift 2px on hover, arrows nudge. All motion is disabled under `prefers-reduced-motion`.
+One orchestrated moment: the hero sun rises from behind the ridge (1.8s) and its halo breathes slowly; the example card settles in from 10px below (never from invisible) and its output curve draws once. Buttons lift 2px on hover, arrows nudge. All motion is disabled under `prefers-reduced-motion`.
 
 ## 9. Assets
 

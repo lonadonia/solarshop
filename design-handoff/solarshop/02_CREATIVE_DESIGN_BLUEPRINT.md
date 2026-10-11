@@ -84,7 +84,8 @@ One orchestrated moment: the hero sun rises from behind the ridge (1.8s) and its
 | Asset | Status |
 |---|---|
 | Logo (full colour, light, mark, favicons) | Generated from the client PNG |
-| Hero, home, business and farm scenes | Custom SVG illustrations, daylight |
-| Six product illustrations | Custom SVG, placeholders for real product shots |
+| Hero panorama | Custom SVG illustration, daylight |
+| Home, business and farm (Who it's for) | Daylight photos (Unsplash), SVG scenes as fallback |
+| Six shop products | Daylight photos (Unsplash), SVG product art as fallback; replace with real product shots |
 | Icons | Custom service icons + Lucide UI icons (ISC licence) |
-| Photography | None used; guidelines in README |
+| Photography | Who it's for and shop only; credits in `src/content/photos.ts`, guidelines in README |

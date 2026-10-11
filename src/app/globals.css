@@ -583,3 +583,8 @@ details.faq[open] .faq-icon {
     stroke-dashoffset: 300;
   }
 }
+
+/* Photos: a touch softer and warmer so they sit with the daylight palette */
+.photo {
+  filter: saturate(0.94) contrast(1.02) brightness(1.02);
+}

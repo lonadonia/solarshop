@@ -23,7 +23,7 @@ Tested 11 Oct 2026 against the production static build (`out/`) and the single-f
 | REQ-005 | All illustrations daylight, light sky gradients only | VERIFIED_PASS (visual review) |
 | REQ-006 | Pale page ground and tints; saturation limited to accents | VERIFIED_PASS (visual review) |
 | REQ-007 | Section spacing 68–112px, 78rem container | VERIFIED_PASS |
-| REQ-008 | No photographs; custom SVG art only | VERIFIED_PASS |
+| REQ-008 | Custom SVG hero; photos limited to Who it's for and the shop, at client request (11 Oct 2026) | UPDATED: client asked for realistic images in these two sections |
 | REQ-009 | Hero, services, solutions, shop, process, about, FAQ, enquiry all present | VERIFIED_PASS |
 | REQ-010 | Horizontal overflow at 1440 / 1024 / 768 / 390 / 360 = 0 px | VERIFIED_PASS |
 | REQ-011 | Lighthouse with compression: mobile 92 (FCP 1.4s, LCP 3.1s, TBT 120ms, CLS 0); desktop 100 (LCP 0.7s) | VERIFIED_PASS |

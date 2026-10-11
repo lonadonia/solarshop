@@ -1,5 +1,7 @@
 import { ArrowRight, Check } from "lucide-react";
 import { enquiry, solutions } from "@/content/site";
+import { photos } from "@/content/photos";
+import { Photo } from "./Photo";
 import { BusinessScene, FarmScene, HomeScene } from "./art/Scenes";
 
 const scenes = { home: HomeScene, business: BusinessScene, farm: FarmScene };
@@ -49,8 +51,11 @@ export function Solutions() {
                 hidden={i !== 0}
                 className="grid items-center gap-10 rounded-[2.25rem] bg-paper p-4 sm:p-5 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:p-6"
               >
-                <div className="arch aspect-[4/3] max-w-full bg-mist">
-                  <Scene />
+                <div className="arch relative aspect-[4/3] max-w-full bg-mist">
+                  <div className="absolute inset-0" aria-hidden="true" data-photo-fallback>
+                    <Scene />
+                  </div>
+                  <Photo photo={photos[s.scene]} sizes="(min-width: 1024px) 600px, 92vw" maxWidth={1440} className="photo absolute inset-0 h-full w-full object-cover" />
                 </div>
                 <div className="px-3 pb-6 sm:px-5 lg:py-6 lg:pr-10">
                   <p className={`font-mono text-xs uppercase tracking-[0.14em] ${accents[i]}`}>{s.tab}</p>

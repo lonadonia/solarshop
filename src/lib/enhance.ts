@@ -324,6 +324,18 @@ function initForm(c: Cleanup[]) {
   );
 }
 
+/** A photo that fails to load is removed, revealing the illustration underneath. */
+function initPhotos(c: Cleanup[]) {
+  qsa<HTMLImageElement>("img[data-photo]").forEach((img) => {
+    const fallBack = () => {
+      img.parentElement?.querySelector("[data-photo-fallback]")?.removeAttribute("aria-hidden");
+      img.remove();
+    };
+    if (img.complete && img.naturalWidth === 0) fallBack();
+    else on(img, "error", fallBack, c, { once: true });
+  });
+}
+
 export function initSite(): Cleanup {
   const cleanups: Cleanup[] = [];
   initHeader(cleanups);
@@ -331,6 +343,7 @@ export function initSite(): Cleanup {
   initTabs(cleanups);
   initFilter(cleanups);
   initForm(cleanups);
+  initPhotos(cleanups);
   document.documentElement.classList.add("js");
   return () => cleanups.forEach((fn) => fn());
 }

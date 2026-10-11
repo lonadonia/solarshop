@@ -1,5 +1,7 @@
 import { MessageCircle } from "lucide-react";
 import { productCategories, products } from "@/content/site";
+import { photos } from "@/content/photos";
+import { Photo } from "./Photo";
 import { ProductArt } from "./art/ProductArt";
 
 const wells = ["bg-butter", "bg-mist", "bg-sage"];
@@ -55,8 +57,16 @@ export function Shop() {
           {products.map((p, i) => (
             <li key={p.id} data-category={p.category} className="group">
               <article className="flex h-full flex-col rounded-[2rem] bg-paper p-3 text-ink transition-transform duration-300 ease-out group-hover:-translate-y-1">
-                <div className={`arch aspect-[4/3] max-w-full ${wells[i % wells.length]} px-6 pt-8`}>
-                  <ProductArt art={p.art} />
+                <div className={`arch relative aspect-[4/3] max-w-full ${wells[i % wells.length]}`}>
+                  <div className="absolute inset-0 px-6 pt-8" aria-hidden="true" data-photo-fallback>
+                    <ProductArt art={p.art} />
+                  </div>
+                  <Photo
+                    photo={photos[p.art]}
+                    sizes="(min-width: 1024px) 400px, (min-width: 640px) 46vw, 92vw"
+                    maxWidth={1080}
+                    className="photo absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+                  />
                 </div>
                 <div className="flex flex-1 flex-col px-4 pb-4 pt-5">
                   <p className="font-mono text-[0.7rem] uppercase tracking-[0.12em] text-leaf-deep">

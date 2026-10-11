@@ -49,7 +49,7 @@ These are placeholders written for the design. Replace them with SolarShop's rea
 
 ### Photography guidelines
 
-The page uses custom daylight illustrations, so it looks finished without stock photos. If you add real photos later: natural daylight only, no night or dusk shots, no dark gradient overlays, real installs where possible. Good spots to swap in photos are the three scenes in "Who it's for" (`src/components/art/Scenes.tsx`).
+The hero uses a custom daylight illustration. "Who it's for" and the shop use real daylight photos from Unsplash (free under the Unsplash License), listed with credits in `src/content/photos.ts`. If a photo cannot load, the matching illustration shows in its place. To use SolarShop's own photos, put them in `public/photos` and change `src` in that file. Keep to natural daylight: no night or dusk shots, no dark gradient overlays, real installs where possible.
 
 ## Enquiry form
 

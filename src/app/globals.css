@@ -518,15 +518,15 @@ details.faq[open] .faq-icon {
 }
 @media (min-width: 1024px) {
   .hero-wash {
+    /* the photo's open sky sits on the left, so only a light wash is needed there */
     background:
       linear-gradient(
         90deg,
-        rgb(247 248 241 / 0.97) 0%,
-        rgb(247 248 241 / 0.9) 34%,
-        rgb(247 248 241 / 0.55) 50%,
-        rgb(247 248 241 / 0) 68%
-      ),
-      linear-gradient(0deg, rgb(247 248 241 / 0.35) 0%, rgb(247 248 241 / 0) 18%);
+        rgb(247 248 241 / 0.9) 0%,
+        rgb(247 248 241 / 0.78) 30%,
+        rgb(247 248 241 / 0.35) 46%,
+        rgb(247 248 241 / 0) 60%
+      );
   }
 }
 .hero {

@@ -13,17 +13,20 @@ export type PhotoData = {
   page: string;
   /** CSS object-position, to keep the subject in frame when cropped */
   focus?: string;
+  /** Pre-sized local files, e.g. "/photos/hero-1000.webp 1000w, ..." */
+  srcSet?: string;
 };
 
 const u = (id: string) => `https://images.unsplash.com/${id}`;
 
 export const photos = {
   hero: {
-    src: u("photo-1756511332583-99fc0d4bf7cf"),
-    alt: "A wide solar farm across a green field under a bright blue sky with thin clouds",
-    credit: "James Smith",
-    page: "https://unsplash.com/photos/qg7xspO1Ozk",
-    focus: "60% 70%",
+    src: "/photos/hero-2000.webp",
+    srcSet: "/photos/hero-1000.webp 1000w, /photos/hero-1600.webp 1600w, /photos/hero-2000.webp 2000w",
+    alt: "A modern family home with a full solar roof, a green lawn and hills by the water on a sunny day",
+    credit: "Supplied by client",
+    page: "",
+    // position is set per breakpoint in Hero.tsx
   },
   home: {
     src: u("photo-1655300256335-beef51a914fe"),

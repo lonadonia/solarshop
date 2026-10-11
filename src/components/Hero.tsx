@@ -9,11 +9,11 @@ export function Hero() {
   return (
     <section id="top" className="hero relative isolate overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <Photo photo={photos.hero} sizes="100vw" priority className="h-full w-full object-cover" />
+        <Photo photo={photos.hero} sizes="(max-aspect-ratio: 1/1) 300vh, 100vw" priority className="h-full w-full object-cover object-[60%_55%] lg:object-[22%_50%]" />
         {/* light daylight wash so the text stays readable; never a dark overlay */}
         <div className="hero-wash absolute inset-0" aria-hidden="true" />
       </div>
-      <div className="container-x flex min-h-[calc(100svh-76px)] items-start pb-[34vh] sm:pb-[30vh] pt-10 sm:pt-14 lg:min-h-[min(820px,calc(100svh-88px))] lg:items-center lg:pb-24 lg:pt-16">
+      <div className="container-x flex min-h-[calc(100svh-76px)] items-start pb-[34vh] sm:pb-[30vh] pt-10 sm:pt-14 lg:min-h-[clamp(600px,42vw,820px)] lg:items-center lg:py-14">
         <div className="relative z-10 min-w-0 max-w-[40rem]">
           <p className="eyebrow text-leaf-deep [--dot:var(--color-spring)]">{hero.eyebrow}</p>
           <h1 className="h-display mt-6 max-w-[11ch] text-ink">

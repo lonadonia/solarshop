@@ -49,7 +49,7 @@ These are placeholders written for the design. Replace them with SolarShop's rea
 
 ### Photography
 
-The hero, the "Who it's for" tabs and the shop cards use real daylight photos, free under the [Unsplash License](https://unsplash.com/license), listed with credits in `src/content/photos.ts`. They load from Unsplash's image CDN in the right size for each screen.
+The hero uses the client-supplied photo in `public/photos/` (WebP at 1000, 1600 and 2000 px). The "Who it's for" tabs and the shop cards use real daylight photos, free under the [Unsplash License](https://unsplash.com/license), listed with credits in `src/content/photos.ts`. They load from Unsplash's image CDN in the right size for each screen.
 
 To use SolarShop's own photos (recommended before launch): put the files in `public/photos/` and change each `src` in `src/content/photos.ts` to the file path, for example `"/photos/hero.jpg"`. Keep to natural daylight shots, no night or dusk, no dark overlays. The hero text sits on the left, so pick a hero photo with open sky or calm ground on that side.
 

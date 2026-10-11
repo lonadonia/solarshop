@@ -65,7 +65,7 @@ Without the variable, the form runs in **preview mode**: it validates and then s
 
 **Any web host (cPanel, Plesk, Netlify, S3):** run `npm run build` and upload the contents of `out/` to the web root (for cPanel, `public_html`).
 
-**Vercel:** import the repository. Vercel detects Next.js automatically; the default build command (`npm run build`) works as is, and the static export in `out/` is served. Add `NEXT_PUBLIC_ENQUIRY_ENDPOINT` as an environment variable. No `vercel.json` is needed.
+**Vercel:** import the repository. Vercel detects Next.js automatically; the default build command (`npm run build`) works as is, and the static export in `out/` is served. Add `NEXT_PUBLIC_ENQUIRY_ENDPOINT` as an environment variable. `vercel.json` pins the Next.js framework preset.
 
 ## Single-file preview
 

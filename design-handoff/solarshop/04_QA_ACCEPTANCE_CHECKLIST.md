@@ -6,7 +6,7 @@ Tested 11 Oct 2026 against the production static build (`out/`) and the single-f
 
 | Test | Result | Evidence |
 |---|---|---|
-| `npm run build` (Next.js 16.3.6, static export) | VERIFIED_PASS | Exit 0, routes `/` and `/_not-found` prerendered |
+| `npm run build` (Next.js 16.3.8, static export) | VERIFIED_PASS | Exit 0, routes `/` and `/_not-found` prerendered |
 | `npm run typecheck` | VERIFIED_PASS | `tsc --noEmit` exit 0 |
 | `npm run lint` | VERIFIED_PASS | ESLint (next core-web-vitals + typescript) 0 problems |
 | Console errors / failed requests | VERIFIED_PASS | None at any tested width, both builds |

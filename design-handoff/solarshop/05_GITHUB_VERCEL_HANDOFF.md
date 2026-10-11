@@ -3,11 +3,11 @@
 | Item | Status |
 |---|---|
 | Project slug | `solarshop-website` |
-| Code | Next.js 16.3.6, React 19.2.8, TypeScript 5.9.3, Tailwind CSS 4.3.3, static export |
+| Code | Next.js 16.3.8, React 19.2.8, TypeScript 5.9.3, Tailwind CSS 4.3.3, static export |
 | CODE_BUILT | VERIFIED_PASS — `npm run build` exit 0, lint and typecheck clean |
 | Local repository | Git, branch `main`, first commit `9f3fa85b435a983592d23af1bc94ed7765faee32` |
 | GITHUB_PUSHED | VERIFIED_PASS — pushed to https://github.com/lonadonia/solarshop, branch `main` (repository is **public**; switch to private in GitHub settings if the client work should not be visible) |
-| VERCEL_READY | VERIFIED_PASS — standard Next.js build, static export, no server features, no `vercel.json` needed, no hard-coded localhost URLs |
+| VERCEL_READY | VERIFIED_PASS — Next.js 16.3.8 (patched; 16.3.6 had a high-severity advisory that blocks Vercel deploys), static export, `vercel.json` pins the Next.js preset |
 | PREVIEW_DEPLOYED | **PREVIEW_NOT_DEPLOYED** — the Vercel connector returned 403 for the account's team scope; import the repo manually (steps below) |
 | PRODUCTION_UNCHANGED | Yes — no hosting, DNS or production systems were touched |
 

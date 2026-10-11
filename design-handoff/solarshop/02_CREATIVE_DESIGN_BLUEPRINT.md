@@ -84,7 +84,7 @@ One orchestrated moment: the hero sun rises (1.8s) and its halo breathes slowly;
 | Asset | Status |
 |---|---|
 | Logo (full colour, light, mark, favicons) | Generated from the client PNG |
-| Hero, home, business and farm scenes | Custom SVG illustrations, daylight |
-| Six product illustrations | Custom SVG, placeholders for real product shots |
+| Hero, home, business and farm images | Real daylight photos (Unsplash License), see `src/content/photos.ts` |
+| Six product images | Real photos (Unsplash License), to be replaced with SolarShop's own product shots |
 | Icons | Custom service icons + Lucide UI icons (ISC licence) |
-| Photography | None used; guidelines in README |
+| Photography | Hotlinked from Unsplash CDN; swap guide in README |

@@ -504,3 +504,31 @@ details.faq[open] .faq-icon {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Hero photo: a soft daylight wash behind the text, fading to the clear photo.
+   Mobile fades top-to-bottom, desktop left-to-right. Never darkens the image. */
+.hero-wash {
+  background: linear-gradient(
+    180deg,
+    rgb(247 248 241 / 0.96) 0%,
+    rgb(247 248 241 / 0.9) 62%,
+    rgb(247 248 241 / 0.6) 78%,
+    rgb(247 248 241 / 0) 92%
+  );
+}
+@media (min-width: 1024px) {
+  .hero-wash {
+    background:
+      linear-gradient(
+        90deg,
+        rgb(247 248 241 / 0.97) 0%,
+        rgb(247 248 241 / 0.9) 34%,
+        rgb(247 248 241 / 0.55) 50%,
+        rgb(247 248 241 / 0) 68%
+      ),
+      linear-gradient(0deg, rgb(247 248 241 / 0.35) 0%, rgb(247 248 241 / 0) 18%);
+  }
+}
+.hero {
+  background: var(--color-mist);
+}

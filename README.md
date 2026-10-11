@@ -47,9 +47,11 @@ These are placeholders written for the design. Replace them with SolarShop's rea
 - Stats in `about.stats` and the "Sample figures" tag in `src/components/About.tsx`
 - The monitoring chart value (18.6 kWh) in `src/components/Services.tsx`
 
-### Photography guidelines
+### Photography
 
-The page uses custom daylight illustrations, so it looks finished without stock photos. If you add real photos later: natural daylight only, no night or dusk shots, no dark gradient overlays, real installs where possible. Good spots to swap in photos are the three scenes in "Who it's for" (`src/components/art/Scenes.tsx`).
+The hero, the "Who it's for" tabs and the shop cards use real daylight photos, free under the [Unsplash License](https://unsplash.com/license), listed with credits in `src/content/photos.ts`. They load from Unsplash's image CDN in the right size for each screen.
+
+To use SolarShop's own photos (recommended before launch): put the files in `public/photos/` and change each `src` in `src/content/photos.ts` to the file path, for example `"/photos/hero.jpg"`. Keep to natural daylight shots, no night or dusk, no dark overlays. The hero text sits on the left, so pick a hero photo with open sky or calm ground on that side.
 
 ## Enquiry form
 

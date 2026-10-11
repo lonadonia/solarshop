@@ -51,12 +51,6 @@ export function Footer() {
           </div>
           <div className="mt-14 flex flex-col gap-3 border-t border-meadow/20 pt-6 text-sm text-[#b9d0a4] sm:flex-row sm:items-center sm:justify-between">
             <p>© {new Date().getFullYear()} {company.name}. All rights reserved.</p>
-            <p>
-              Photography from{" "}
-              <a href="https://unsplash.com/license" className="link-underline" target="_blank" rel="noopener noreferrer">
-                Unsplash
-              </a>
-            </p>
             <p className="flex gap-5">
               <a href="#top" className="link-underline">
                 Back to top

@@ -1,8 +1,8 @@
 import { ArrowRight, Check } from "lucide-react";
 import { enquiry, solutions } from "@/content/site";
-import { photos } from "@/content/photos";
-import { Photo } from "./Photo";
+import { BusinessScene, FarmScene, HomeScene } from "./art/Scenes";
 
+const scenes = { home: HomeScene, business: BusinessScene, farm: FarmScene };
 const accents = ["text-gold-deep", "text-lake", "text-leaf-deep"];
 
 export function Solutions() {
@@ -38,6 +38,7 @@ export function Solutions() {
 
         <div className="mt-12">
           {solutions.map((s, i) => {
+            const Scene = scenes[s.scene];
             return (
               <div
                 key={s.id}
@@ -49,7 +50,7 @@ export function Solutions() {
                 className="grid items-center gap-10 rounded-[2.25rem] bg-paper p-4 sm:p-5 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:p-6"
               >
                 <div className="arch aspect-[4/3] max-w-full bg-mist">
-                  <Photo photo={photos[s.scene]} sizes="(min-width: 1024px) 560px, 92vw" maxWidth={1440} className="h-full w-full object-cover" />
+                  <Scene />
                 </div>
                 <div className="px-3 pb-6 sm:px-5 lg:py-6 lg:pr-10">
                   <p className={`font-mono text-xs uppercase tracking-[0.14em] ${accents[i]}`}>{s.tab}</p>

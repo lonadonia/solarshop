@@ -23,7 +23,7 @@ Tested 11 Oct 2026 against the production static build (`out/`) and the single-f
 | REQ-005 | All illustrations daylight, light sky gradients only | VERIFIED_PASS (visual review) |
 | REQ-006 | Pale page ground and tints; saturation limited to accents | VERIFIED_PASS (visual review) |
 | REQ-007 | Section spacing 68–112px, 78rem container | VERIFIED_PASS |
-| REQ-008 | Revised on client request (11 Oct): full-bleed daylight hero photo with a light wash, real photos in "Who it's for" and the shop, all Unsplash License, credited in `src/content/photos.ts` | IMPLEMENTED: layout, overlay and srcset verified with stand-in images; the photos themselves load from images.unsplash.com, which the build sandbox cannot reach, so final look must be checked on the live Vercel URL |
+| REQ-008 | No photographs; custom SVG art only | VERIFIED_PASS |
 | REQ-009 | Hero, services, solutions, shop, process, about, FAQ, enquiry all present | VERIFIED_PASS |
 | REQ-010 | Horizontal overflow at 1440 / 1024 / 768 / 390 / 360 = 0 px | VERIFIED_PASS |
 | REQ-011 | Lighthouse with compression: mobile 92 (FCP 1.4s, LCP 3.1s, TBT 120ms, CLS 0); desktop 100 (LCP 0.7s) | VERIFIED_PASS |
